@@ -4,6 +4,8 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
+      searchTerm: ""
+      
     };
   },
   created: function() {
@@ -12,9 +14,22 @@ var HomePage = {
     }.bind(this));
   },
   methods: {
-
-  },
-  computed: {}
+    submit: function() {
+      var params = {
+        search: this.search
+      };
+      axios
+        .post("/trips", params)
+        .then(function(response) {
+          router.push("/");
+        })
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+    }
+  }
 };
 
 // End template-----Begin router------------

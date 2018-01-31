@@ -150,21 +150,21 @@ class TripsController < ApplicationController
 
     #-------------------Disaster Data------------------------
 
-    response = Unirest.get("https://api.predicthq.com/v1/events/?category=disasters%2Cplace.exact=5419384/", headers: {"Accept" => "application/json", "Authorization" => "Bearer #{ENV['access_token']}", "Content-Type" => "application/json"})
+    response = Unirest.get("https://api.predicthq.com/v1/events/?category=disasters%2Cplace.region=5419384/", headers: {"Accept" => "application/json", "Authorization" => "Bearer #{ENV['access_token']}", "Content-Type" => "application/json"})
 
     disaster = response.body
     disaster_data = disaster['category']
 
     # ------------------Airport Delays-----------------------
 
-    response = Unirest.get("https://api.predicthq.com/v1/events/?category=airport-delays%2Cplace.exact=KDEN/", headers: {"Accept" => "application/json", "Authorization" => "Bearer #{ENV['access_token']}", "Content-Type" => "application/json"})
+    response = Unirest.get("https://api.predicthq.com/v1/events/?category=airport-delays%2Cplace.region=KDEN/", headers: {"Accept" => "application/json", "Authorization" => "Bearer #{ENV['access_token']}", "Content-Type" => "application/json"})
 
     airport_delays = response.body
     airport_delays_data = airport_delays['category']
 
    # ---------------Terror Data-----------------------------
 
-    response = Unirest.get("https://api.predicthq.com/v1/events/?category=terror%2Cplace.exact=5419384/", headers: {"Accept" => "application/json", "Authorization" => "Bearer #{ENV['access_token']}", "Content-Type" => "application/json"})
+    response = Unirest.get("https://api.predicthq.com/v1/events/?category=terror%2Cplace.region=5419384/", headers: {"Accept" => "application/json", "Authorization" => "Bearer #{ENV['access_token']}", "Content-Type" => "application/json"})
 
     terror = response.body
     terror_data = terror['category']

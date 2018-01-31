@@ -24,10 +24,24 @@
 <template id="home-page">
   <div class="vue-component">
 
-    "hi"
-    <h1>{{  }}</h1>
+
+    <div class="vue-component">
+
+    <div class="container">
+      <ul>
+        <li class="text-danger" v-for="error in errors">{{ error }}</li>
+      </ul>
+      <div class="form-group">
+        <label>Search:</label> 
+        <input type="text" class="form-control" v-model="searchTerm">
+      </div>
+      <button class="btn btn-primary" v-on:click="submit()">Submit</button>
+    </div>
+
+  </div>
 
   </div>
 </template>
+
 
 <!-- End Homepage Template -->
