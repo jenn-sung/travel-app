@@ -4,17 +4,24 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
-      message: "Welcome to Vue.js!"
     };
   },
-  created: function() {},
-  methods: {},
+  created: function() {
+    axios.get('/trips').then(function(response) {
+      this.countries = response.data;
+    }.bind(this));
+  },
+  methods: {
+
+  },
   computed: {}
 };
 
-
+// End template-----Begin router------------
 var router = new VueRouter({
-  routes: [{ path: "/", component: HomePage }],
+  routes: [
+    { path: "/", component: HomePage }
+  ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
   }
