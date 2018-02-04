@@ -32,7 +32,7 @@ class TripsController < ApplicationController
 
     hospital = response.body
     hospital_data = hospital['results'][0]['name']
-
+    
     # ------Begin doctor results---------
 
     response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=doctor&key=#{ENV['API_KEY']}")

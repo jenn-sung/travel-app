@@ -5,15 +5,15 @@ var HomePage = {
   data: function() {
     return {
       message: "SUP",
-      searchTerm: "",
-      trips: []  
+      searchTerm: ""
+        
     };
   },
   created: function() {
-    axios.get('/trips').then(function(response) {
-      // console.log(response.data);
-      this.trips = response.data;
-    }.bind(this));
+    // axios.get('/trips').then(function(response) {
+    //   console.log(response.data);
+    //   this.trips = response.data;
+    // }.bind(this));
   },
   methods: {
     submit: function() {
@@ -28,20 +28,6 @@ var HomePage = {
         });
     }
   }
-};
-
-var ResultsPage = {
-  template: "#results-page",
-  data: function() {
-    return {
-      message2: "SUP",
-      trips: []  
-    };
-  },
-  created: function() {
-  },
-  methods: {}
-    
 };
 
 // End template
