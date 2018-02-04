@@ -41,4 +41,6 @@ gem 'unirest'
 
 gem 'figaro'
 
+gem 'geocoder'
+
 
