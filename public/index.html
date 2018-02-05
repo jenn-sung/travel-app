@@ -368,9 +368,22 @@
 	</body>
 </html>
 
-
 	<template id="home-page">
 	  <div class="vue-component">
+	  
+	  			{{ trip.hospital }}
+	  			{{ trip.gas_station }}
+	  			{{ trip.bank }}
+	  			{{ trip.police }}
+	  			{{ trip.pharmacy }}
+	  			{{ trip.hotel }}
+	  			{{ trip.atm }}
+	  			{{ trip.airport }}
+	  			{{ trip.transit_station }}
+	  			{{ trip.weather }}
+	  			{{ trip.weather2 }}
+
+	  
 	  	<div class="container">
 	  		<div class="form-group">
 	     	<label>Search for a city:</label> 
@@ -379,5 +392,6 @@
 	      <button class="btn btn-primary" v-on:click="submit()">Submit</button>
 	    </div>
 	 </div>
-</template>
+	</template>
+
 </div>

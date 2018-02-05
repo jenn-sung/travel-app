@@ -5,25 +5,25 @@ class TripsController < ApplicationController
 
     search_term = params['id']
 
-    p search_term
+    # p search_term
 
     the_coordinates = Geocoder.coordinates(search_term)
 
-    p the_coordinates
+    # p the_coordinates
 
     latitude = the_coordinates[0]
     longitude = the_coordinates[1]
 
-    p latitude
+    # p latitude
 
-    p longitude
+    # p longitude
 
-    # # -----Begin travel warning response------
+    # -----Begin travel warning response------
     
-    # response = Unirest.get("https://www.reisewarnung.net/api?country=#{search_term}")
+    response = Unirest.get("https://www.reisewarnung.net/api?country=#{search_term}")
 
-    # travel_warning = response.body
-    # country_warning = travel_warning['data']['lang']['en']['advice']
+    travel_warning = response.body
+    country_warning = travel_warning['data']['lang']['en']['advice']
 
 
      # -------Begin hospital results------
@@ -32,7 +32,7 @@ class TripsController < ApplicationController
 
     hospital = response.body
     hospital_data = hospital['results'][0]['name']
-    
+  
     # ------Begin doctor results---------
 
     response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=doctor&key=#{ENV['API_KEY']}")
@@ -40,7 +40,7 @@ class TripsController < ApplicationController
     doctor_data = doctor['results'][0]['name']
    
 
-    # ----Begin Gas station data-----
+   #  # ----Begin Gas station data-----
 
     response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=gas_station&key=#{ENV['API_KEY']}")
 
@@ -111,7 +111,7 @@ class TripsController < ApplicationController
     
    #  # ----------Begin transit station data-----------
 
-    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=41.390205,2.154007&rankby=distance&type=transit_station&key=#{ENV['API_KEY']}")
+    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=transit_station&key=#{ENV['API_KEY']}")
 
     transit_station = response.body
     transit_station_data = transit_station['results'][0]['name']
@@ -148,7 +148,7 @@ class TripsController < ApplicationController
     forecast2_data = forecast2['forecast']['forecastday'][0]['day']['maxtemp_c']
   
     
-   # #  # -----------------Begin Render-------------------------
+   # # #  # -----------------Begin Render-------------------------
    
     render json: {
         

@@ -4,10 +4,13 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
-      message: "SUP",
-      searchTerm: ""
-        
+      searchTerm: "",
+      trip: "",
+      
+
+           
     };
+    
   },
   created: function() {
     // axios.get('/trips').then(function(response) {
@@ -23,9 +26,9 @@ var HomePage = {
       axios
         .get("/trips?id=barcelona")
         .then(function(response) {
-          router.push("/");
-
-        });
+          console.log(response.data);
+          this.trip = response.data;
+        }.bind(this));
     }
   }
 };
