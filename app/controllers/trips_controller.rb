@@ -32,7 +32,7 @@ class TripsController < ApplicationController
 
     hospital = response.body
     hospital_data = hospital['results'][0]['name']
-  
+
     # ------Begin doctor results---------
 
     response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=doctor&key=#{ENV['API_KEY']}")
@@ -115,6 +115,14 @@ class TripsController < ApplicationController
 
     transit_station = response.body
     transit_station_data = transit_station['results'][0]['name']
+
+    # ------------Begin Dentist data--------------------
+
+    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=dentist&key=#{ENV['API_KEY']}")
+
+    dentist = response.body
+    dentist_data = dentist['results'][0]['name']
+
     
 
    #  # --------Begin Weather data------------
@@ -163,6 +171,7 @@ class TripsController < ApplicationController
         atm: atm_data,
         airport: airport_data,
         transit_station: transit_station_data,
+        dentist: dentist_data,
         weather: weather_data,
         weather2: weather2_data,
         forecast: forecast_data,
