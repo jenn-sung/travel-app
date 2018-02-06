@@ -21,6 +21,7 @@ var HomePage = {
         .then(function(response) {
           this.trip = response.data;
         }.bind(this));
+
     }
   }
 };
