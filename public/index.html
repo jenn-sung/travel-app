@@ -34,10 +34,13 @@
   	<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
   	<script src="https://unpkg.com/axios/dist/axios.js"></script>
   	<script src="index.js" defer></script>
+  	<div>
 
 	</head>
 	<body>
 		<div id="vue-app">
+
+		
 
 		<!-- TOP BAR -->
 		<div id="topBar">
@@ -70,26 +73,9 @@
 					</ul>
 				</div>
 
-
-				<!-- 
-					LINKS - A MENU ALTERNATIVE
-					Do not use this for responsive - too many links.
-					If you want to use it, add class: hidden-xs
-					Or use it instead of language / my account
-				-->
-				<!-- 
-				<ul class="pull-right list-unstyled links">
-					<li><a href="#"><i class="fa fa-user"></i> Login</a></li>
-					<li><a href="#"><i class="fa fa-user"></i> Register</a></li>
-				</ul>
-				-->
-
 			</div>
 		</div>
 		<!-- /TOP BAR -->
-
-
-
 
 		<!-- HEADER -->
 		<header id="header">
@@ -139,8 +125,7 @@
 									<li><a href="page-terms-and-conditions.html">Terms &amp; Conditions</a></li>
 								</ul>
 							</li>
-
-							
+			
 							
 							<li class="dropdown">
 								<a class="dropdown-toggle" href="#">CONTACT <i class="fa fa-angle-down"></i></a>
@@ -168,19 +153,17 @@
 
 
 
-
-
-
-
-
 		<router-view></router-view>
+
+
+
+
+		
 
 
 		<!-- FOOTER -->
 		<footer id="footer">
 			<span id="slideTimer"><!-- fs-slideshow timer line --></span>
-
-			
 
 			<!-- copyright -->
 			<span class="hidden-xs">&copy; Jenn Sung</span>
@@ -373,7 +356,7 @@
 	  	</div>
 
 	 
-	  <div class="container">
+	  <div class="container" v-if="isVisible">
 	    <div class="row">
 
 						<ul class="sort-destination isotope" data-sort-id="isotope-list">

@@ -6,6 +6,9 @@ var HomePage = {
     return {
       searchTerm: "",
       trip: "",
+      google: "",
+      isVisible: false
+
            
     };
     
@@ -14,6 +17,7 @@ var HomePage = {
   },
   methods: {
     submit: function() {
+      this.isVisible = true;
       var params = {
         search: this.searchTerm
       };
@@ -22,12 +26,26 @@ var HomePage = {
           this.trip = response.data;
         }.bind(this));
 
+    },
+
+//     var map;
+
+//     function initMap() {
+//       var uluru = {lat: -25.363, lng: 131.044};
+//       var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 4,
+//         center: uluru
+//       });
+//       var marker = new google.maps.Marker({
+//         position: uluru,
+//         map: map
+//       });
+//     }
     }
-  }
 };
 
 
-// End template
+
 
 
 // -----Begin router------------
@@ -43,7 +61,7 @@ var router = new VueRouter({
 
 var app = new Vue({
   el: "#vue-app",
-  router: router
+  router: router,
 
 });
 

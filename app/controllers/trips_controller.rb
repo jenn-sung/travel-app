@@ -72,13 +72,13 @@ class TripsController < ApplicationController
 
    #  #--------Begin pharmacy data-----------
 
-    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=pharmacy&key=#{ENV['API_KEY']}")
+    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&keyword=pharmacy&key=#{ENV['API_KEY']}")
 
-    # pharmacy_info = {}
+    
     pharmacy = response.body
 
     pharmacy_data = pharmacy['results'][0]['name']
-    # pharmacy_address = pharmacy['results'][0]['vicinity']
+    pharmacy_address = pharmacy['results'][0]['vicinity']
 
    #  # render json: pharmacy.to_json
    
@@ -166,7 +166,8 @@ class TripsController < ApplicationController
         embassy: embassy_data,
         bank: bank_data,
         police: police_data,
-        pharamcy: pharmacy_data,
+        pharmcy: pharmacy_data,
+        pharmacy_address: pharmacy_address,
         hotel: hotel_data,
         atm: atm_data,
         airport: airport_data,
