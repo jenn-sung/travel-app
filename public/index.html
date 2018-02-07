@@ -4,7 +4,7 @@
 <!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <title>Alkaline - Responsive Template</title>
+    <title>Odyssey - Smart Travel</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
@@ -45,13 +45,12 @@
     <!-- TOP BAR -->
     <div id="topBar">
       <div class="container">
-        <span class="hidden-xs">Welcome to Alkaline: you@domain.com or</span> 
-        +800-123-456
+        <span class="hidden-m">
 
         <div class="btn-group pull-right">
-          <button class="dropdown-toggle language" type="button" data-toggle="dropdown">
-            My Account <span class="caret"></span>
-          </button>
+          <!-- <button class="dropdown-toggle language"  data-toggle="dropdown">
+             <span class="caret"></span>
+          </button> -->
 
           <ul class="dropdown-menu">
             <li>
@@ -82,7 +81,7 @@
       <div class="container">
 
         <!-- LOGO -->
-        <a href="index.html" class="logo"><img alt="" src="assets/images/logo.png" height="60" /></a>
+        <a href="index.html" class="logo"><img alt="" src="assets/images/logo.png" height="50" /></a>
         <!-- LOGO -->
 
         <!-- OPTIONS -->
@@ -346,7 +345,7 @@
     </ul>
   </div>
 
-      <div class="container">
+      <div class="search-container" v-if="show">
         <div class="form-group">
         <label>Search for a city:</label> 
         <input type="text" class="form-control" v-model="searchTerm">
@@ -370,7 +369,7 @@
                     <img class="img-responsive" src="assets/images/hotel.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Hotel: {{ trip.hotel }}</h4>
+                    <h4><b>Nearest Hotel:</b> {{ trip.hotel }}</h4>
                   </div>
                 </div>
               </li>
@@ -385,7 +384,7 @@
                     <img class="img-responsive" src="assets/images/travel.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Airport: {{ trip.airport }}</h4>
+                    <h4><b>Nearest Airport:</b> {{ trip.airport }}</h4>
                   </div>
                 </div>
               </li>
@@ -399,7 +398,7 @@
                     <img class="img-responsive" src="assets/images/train.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Transit Station: {{ trip.transit_station }}</h4>
+                    <h4><b>Nearest Transit Station:</b> {{ trip.transit_station }}</h4>
                   </div>
                 </div>
               </li>
@@ -413,7 +412,7 @@
                     <img class="img-responsive" src="assets/images/bank.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Bank: {{ trip.bank }}</h4>
+                    <h4><b>Nearest Bank:</b> {{ trip.bank }}</h4>
                   </div>
                 </div>
               </li>
@@ -427,7 +426,7 @@
                     <img class="img-responsive" src="assets/images/hospital.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Hospital: {{ trip.hospital }}</h4>
+                    <h4><b>Nearest Hospital:</b> {{ trip.hospital }}</h4>
                   </div>
                 </div>
               </li>
@@ -438,10 +437,10 @@
                       <span class="overlay"></span>
                       <span class="inner">
                       </span>
-                    <img class="img-responsive" src="assets/images/hospital.svg" width="260" height="260" alt="">
+                    <img class="img-responsive" src="assets/images/pills (1).svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Pharmacy: {{ trip.pharmacy }}</h4>
+                    <h4><b>Nearest Pharmacy:</b> {{ trip.pharmacy }}</h4>
                   </div>
                 </div>
               </li>
@@ -455,7 +454,7 @@
                     <img class="img-responsive" src="assets/images/embassy.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Embassy: {{ trip.embassy }}</h4>
+                    <h4><b>Nearest Embassy:</b> {{ trip.embassy }}</h4>
                   </div>
                 </div>
               </li>
@@ -469,7 +468,7 @@
                     <img class="img-responsive" src="assets/images/police.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Police Station: {{ trip.police }}</h4>
+                    <h4><b>Nearest Police Station:</b> {{ trip.police }}</h4>
                   </div>
                 </div>
               </li>
@@ -483,7 +482,7 @@
                     <img class="img-responsive" src="assets/images/gas-station.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Gas Station: {{ trip.gas_station }}</h4>
+                    <h4><b>Nearest Gas Station:</b> {{ trip.gas_station }}</h4>
                   </div>
                 </div>
               </li>
@@ -497,7 +496,7 @@
                     <img class="img-responsive" src="assets/images/atm.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest ATM: {{ trip.atm }}</h4>
+                    <h4><b>Nearest ATM:</b> {{ trip.atm }}</h4>
                   </div>
                 </div>
               </li>
@@ -511,7 +510,7 @@
                     <img class="img-responsive" src="assets/images/doctor.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Doctor: {{ trip.doctor }}</h4>
+                    <h4><b>Nearest Doctor:</b> {{ trip.doctor }}</h4>
                   </div>
                 </div>
               </li>
@@ -525,7 +524,7 @@
                     <img class="img-responsive" src="assets/images/dentist.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4>Nearest Dentist: {{ trip.dentist }}</h4>
+                    <h4><b>Nearest Dentist:</b> {{ trip.dentist }}</h4>
                   </div>
                 </div>
               </li>

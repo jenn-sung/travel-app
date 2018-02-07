@@ -305,7 +305,10 @@ pre {
 	   -moz-border-radius: 8px;
 			border-radius: 8px;
 }
-
+.search-container  { position: fixed; width: 700px; top: 40%; left: 35%; }
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+} }
 .fixed 				{ position:fixed !important; 	}
 .relative 			{ position:relative !important;	}
 .nopadding 			{ padding:0 !important; 		}
