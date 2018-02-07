@@ -7,7 +7,8 @@ var HomePage = {
       searchTerm: "",
       trip: "",
       google: "",
-      isVisible: false
+      isVisible: false,
+      show: true
 
            
     };
@@ -18,6 +19,7 @@ var HomePage = {
   methods: {
     submit: function() {
       this.isVisible = true;
+      this.show = !this.show;
       var params = {
         search: this.searchTerm
       };
