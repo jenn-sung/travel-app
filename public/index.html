@@ -120,7 +120,7 @@
               <li class="dropdown">
                 <a class="dropdown-toggle" href="#">CONTACT <i class="fa fa-angle-down"></i></a>
                 <ul class="dropdown-menu pull-right">
-                  <li><a href="contact-1.html">Contact Us</a></li>
+                  <li><a href="contact-1.html">Contact #1</a></li>
                   
                 </ul>
               </li>
@@ -208,11 +208,11 @@
           </div>
 
           <div class="block">
-            <h2>TEMPLATE</h2>
+            
           </div>
 
           <div class="block">
-            <p>ALKA<b>LINE</b> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
+            
           </div>
 
           
@@ -228,11 +228,11 @@
           </div>
 
           <div class="block">
-            <h2>BEAUTY &amp; SHOPPING</h2>
+            
           </div>
 
           <div class="block">
-            <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
+            
           </div>
 
           
@@ -248,11 +248,11 @@
           </div>
 
           <div class="block">
-            <h2>HIGH QUALITY FURNITURE STORE</h2>
+            
           </div>
 
           <div class="block">
-            <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
+            
           </div>
 
           
@@ -268,11 +268,11 @@
           </div>
 
           <div class="block">
-            <h2>MEDICAL WEBSITE FOR YOUR CLINIC</h2>
+            
           </div>
 
           <div class="block">
-            <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
+            
           </div>
 
           
@@ -288,11 +288,11 @@
           </div>
 
           <div class="block">
-            <h2>MOTOCROS &amp; ATV</h2>
+            
           </div>
 
           <div class="block">
-            <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
+            >
           </div>
 
           
@@ -308,11 +308,11 @@
           </div>
 
           <div class="block">
-            <h2>ALL BOOKS YOU NEED</h2>
+            
           </div>
 
           <div class="block">
-            <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
+            >
           </div>
 
           
@@ -324,9 +324,11 @@
 
       <div class="search-container" v-if="show">
         <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search for a City" v-model="searchTerm">
+        <input type="text" class="form-control" autofocus="autofocus" placeholder="Search for a City" v-model="searchTerm">
         </div>
-        <button class="btn btn-primary pull-right" v-on:click="submit()">Submit</button>
+        
+        <button class="btn btn-primary pull-right" v-on:keyup.enter="submit" v-on:click="submit()">Search</button>
+      
       </div>
 
    
