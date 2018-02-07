@@ -49,6 +49,7 @@ a, a:hover, a:active,
 .btn-primary {
 	border-color:#333;
 	background-color:#333;
+	color: #e8cc2a;
 }
 
 .btn-primary:hover,
@@ -97,6 +98,7 @@ a, a:hover, a:active,
 	#topBar .btn-group.open .dropdown-toggle {
 		box-shadow:none;
 		-moz-box-shadow:none;
+		color:#e8cc2a;
 	}
 	#topBar .dropdown-menu {
 		box-shadow:none;
@@ -108,7 +110,7 @@ a, a:hover, a:active,
 	}
 	#topBar .dropdown-menu li,
 	#topBar .dropdown-menu li a {
-		color:#ccc;
+		color: #ccc;
 		text-shadow:none;
 	}
 	#topBar .dropdown-menu li:hover>a {
@@ -646,6 +648,7 @@ div.mc-image {
 		margin-right:20px;
 		display: inline-block;
 		z-index:0; 
+		display: none;
 	}
 	div.maximage-controls #slider_next,
 	div.maximage-controls #slider_prev {

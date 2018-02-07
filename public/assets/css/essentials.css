@@ -63,6 +63,8 @@ button {
 	background: none;
 	border: 0; margin: 0; padding: 0;
 	cursor: pointer;
+	
+	
 }
 
 img {
@@ -1641,6 +1643,7 @@ h4.modal-title {
 		opacity:1; color:#333;
 		filter: Alpha(Opacity=100);
 		background:#fff; border:#eee 1px solid;
+		
 
 		-webkit-border-radius: 3px;
 		   -moz-border-radius: 3px;

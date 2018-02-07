@@ -110,18 +110,9 @@
                 <a class="dropdown-toggle" href="#">PAGES <i class="fa fa-angle-down"></i></a>
                 <ul class="dropdown-menu">
                   <li><a href="page-about-us.html">About Us</a></li>
-                  <li><a href="page-team.html">Team</a></li>
-                  <li><a href="page-services.html">Services</a></li>
                   <li><a href="page-faq.html">FAQ</a></li>
-                  <li><a href="page-pricing.html">Pricing</a></li>
                   <li><a href="page-login.html">Login</a></li>
                   <li><a href="page-register.html">Register</a></li>
-                  <li><a href="page-404.html">404 Error</a></li>
-                  <li><a href="page-left-sidebar.html">Left Sidebar</a></li>
-                  <li><a href="page-right-sidebar.html">Right Sidebar</a></li>
-                  <li><a href="page-full-width.html">Full Width</a></li>
-                  <li><a href="page-empty.html">Empty Page</a></li>
-                  <li><a href="page-terms-and-conditions.html">Terms &amp; Conditions</a></li>
                 </ul>
               </li>
       
@@ -129,10 +120,8 @@
               <li class="dropdown">
                 <a class="dropdown-toggle" href="#">CONTACT <i class="fa fa-angle-down"></i></a>
                 <ul class="dropdown-menu pull-right">
-                  <li><a href="contact-1.html">Contact #1</a></li>
-                  <li><a href="contact-2.html">Contact #2</a></li>
-                  <li><a href="contact-3.html">Contact #3</a></li>
-                  <li><a href="contact-4.html">Contact #4</a></li>
+                  <li><a href="contact-1.html">Contact Us</a></li>
+                  
                 </ul>
               </li>
 
@@ -226,9 +215,7 @@
             <p>ALKA<b>LINE</b> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
           </div>
 
-          <div class="block">
-            <a class="btn btn-success" href="#">PURCHASE NOW</a>
-          </div>
+          
 
         </div>
       </li>
@@ -248,9 +235,7 @@
             <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
           </div>
 
-          <div class="block">
-            <a class="btn btn-warning" href="#">PURCHASE NOW</a>
-          </div>
+          
 
         </div>
       </li>
@@ -270,9 +255,7 @@
             <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
           </div>
 
-          <div class="block">
-            <a class="btn btn-danger" href="#">PURCHASE NOW</a>
-          </div>
+          
 
         </div>
       </li>
@@ -292,9 +275,7 @@
             <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
           </div>
 
-          <div class="block">
-            <a class="btn btn-info" href="#">PURCHASE NOW</a>
-          </div>
+          
 
         </div>
       </li>
@@ -314,9 +295,7 @@
             <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
           </div>
 
-          <div class="block">
-            <a class="btn btn-success" href="#">PURCHASE NOW</a>
-          </div>
+          
 
         </div>
       </li>
@@ -336,9 +315,7 @@
             <p>ALKA<strong>LINE</strong> is a multipurpose template, retina ready, super flexible and fully<br /> responsive based on Bootstrap 3.</p>
           </div>
 
-          <div class="block">
-            <a class="btn btn-primary" href="#">PURCHASE NOW</a>
-          </div>
+          
         </div>
         </div>
       </li>
@@ -347,10 +324,9 @@
 
       <div class="search-container" v-if="show">
         <div class="form-group">
-        <label>Search for a city:</label> 
-        <input type="text" class="form-control" v-model="searchTerm">
+        <input type="text" class="form-control" placeholder="Search for a City" v-model="searchTerm">
         </div>
-        <button class="btn btn-primary" v-on:click="submit()">Submit</button>
+        <button class="btn btn-primary pull-right" v-on:click="submit()">Submit</button>
       </div>
 
    
