@@ -30,6 +30,8 @@ var HomePage = {
 
     },
 
+    
+
 //     var map;
 
 //     function initMap() {

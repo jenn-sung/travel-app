@@ -81,7 +81,7 @@
       <div class="container">
 
         <!-- LOGO -->
-        <a href="index.html" class="logo"><img alt="" src="assets/images/logo.png" height="50" /></a>
+        <a href="/" class="logo"><img alt="" src="assets/images/logo.png" height="50" /></a>
         <!-- LOGO -->
 
         <!-- OPTIONS -->
@@ -204,7 +204,7 @@
         <div class="caption">
 
           <div class="block">
-            <h1>MULTIPURPOSE</h1>
+            <h1>Find the nearest airport while traveling</h1>
           </div>
 
           <div class="block">
@@ -224,7 +224,7 @@
         <div class="caption">
 
           <div class="block">
-            <h1>FASHION WEBSITE</h1>
+            <h1>Find the nearest hotel while traveling</h1>
           </div>
 
           <div class="block">
@@ -244,7 +244,7 @@
         <div class="caption">
 
           <div class="block">
-            <h1>FURNITURE</h1>
+            <h1>Find the nearest hospital while traveling</h1>
           </div>
 
           <div class="block">
@@ -264,7 +264,7 @@
         <div class="caption">
 
           <div class="block">
-            <h1>MEDICAL FUTURE</h1>
+            <h1>Find the nearest bank while traveling</h1>
           </div>
 
           <div class="block">
@@ -284,7 +284,7 @@
         <div class="caption">
 
           <div class="block">
-            <h1>SPORT WEBISTE</h1>
+            <!-- <h1>Odyssey: an intellectual or spiritual wandering or quest </h1> -->
           </div>
 
           <div class="block">
@@ -327,17 +327,17 @@
         <input type="text" class="form-control" autofocus="autofocus" placeholder="Search for a City" v-model="searchTerm">
         </div>
         
-        <button class="btn btn-primary pull-right" v-on:keyup.enter="submit" v-on:click="submit()">Search</button>
+        <button class="btn btn-primary align-items-end pull-right" v-on:keyup.enter="submit" v-on:click="submit()">Search</button>
       
       </div>
 
    
-    <div class="container" v-if="isVisible">
+    <div class="container pull-left" v-if="isVisible">
       <div class="row">
 
             <ul class="sort-destination isotope" data-sort-id="isotope-list">
 
-              <li class="isotope-item col-sm-3 col-md-3 development"><!-- item 1 -->
+              <li class="isotope-item col-sm-4 col-md-4 development"><!-- item 1 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
@@ -347,12 +347,12 @@
                     <img class="img-responsive" src="assets/images/hotel.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Hotel:</b> {{ trip.hotel }}</h4>
+                    <h4><b>Nearest Hotel:</b><p> {{ trip.hotel}}</p></h4>
                   </div>
                 </div>
               </li>
 
-              <li class="isotope-item col-sm-3 col-md-3 photography"><!-- item 2 -->
+              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 2 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
@@ -362,12 +362,12 @@
                     <img class="img-responsive" src="assets/images/travel.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Airport:</b> {{ trip.airport }}</h4>
+                    <h4><b>Nearest Airport:</b><p> {{ trip.airport }}</p></h4>
                   </div>
                 </div>
               </li>
 
-              <li class="isotope-item col-sm-3 col-md-3 design"><!-- item 3 -->
+              <li class="isotope-item col-sm-4 col-md-4 design"><!-- item 4 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
@@ -376,12 +376,12 @@
                     <img class="img-responsive" src="assets/images/train.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Transit Station:</b> {{ trip.transit_station }}</h4>
+                    <h4><b>Nearest Transit Station:</b> <p>{{ trip.transit_station }}</p></h4>
                   </div>
                 </div>
               </li>
 
-              <li class="isotope-item col-sm-3 col-md-3 photography"><!-- item 4 -->
+              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 4 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
@@ -390,12 +390,12 @@
                     <img class="img-responsive" src="assets/images/bank.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Bank:</b> {{ trip.bank }}</h4>
+                    <h4><b>Nearest Bank:</b><p> {{ trip.bank }}</p></h4>
                   </div>
                 </div>
               </li>
 
-              <li class="isotope-item col-sm-3 col-md-3 development"><!-- item 5 -->
+              <li class="isotope-item col-sm-4 col-md-4 development"><!-- item 5 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
@@ -404,26 +404,26 @@
                     <img class="img-responsive" src="assets/images/hospital.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Hospital:</b> {{ trip.hospital }}</h4>
+                    <h4><b>Nearest Hospital:</b> <p>{{ trip.hospital }}</p></h4>
                   </div>
                 </div>
               </li>
 
-              <li class="isotope-item col-sm-3 col-md-3 development"><!-- item 5 -->
+              <li class="isotope-item col-sm-4 col-md-4 development"><!-- item 5 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
                       <span class="inner">
                       </span>
-                    <img class="img-responsive" src="assets/images/pills (1).svg" width="260" height="260" alt="">
+                    <img class="img-responsive" src="assets/images/car.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Pharmacy:</b> {{ trip.pharmacy }}</h4>
+                    <h4><b>Nearest Auto Repair:</b> <p>{{ trip.car_repair }}</p></h4>
                   </div>
                 </div>
               </li>
 
-              <li class="isotope-item col-sm-3 col-md-3 design"><!-- item 7 -->
+              <li class="isotope-item col-sm-4 col-md-4 design"><!-- item 7 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
@@ -432,68 +432,12 @@
                     <img class="img-responsive" src="assets/images/embassy.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Embassy:</b> {{ trip.embassy }}</h4>
+                    <h4><b>Nearest Embassy:</b> <p>{{ trip.embassy }}</p></h4>
                   </div>
                 </div>
               </li>
 
-              <li class="isotope-item col-sm-3 col-md-3 design"><!-- item 8 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/police.svg" width="260" height="260" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Police Station:</b> {{ trip.police }}</h4>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-3 col-md-3 photography"><!-- item 9 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/gas-station.svg" width="260" height="260" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Gas Station:</b> {{ trip.gas_station }}</h4>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-3 col-md-3 photography"><!-- item 10 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/atm.svg" width="260" height="260" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest ATM:</b> {{ trip.atm }}</h4>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-3 col-md-3 photography"><!-- item 11 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/doctor.svg" width="260" height="260" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Doctor:</b> {{ trip.doctor }}</h4>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-3 col-md-3 photography"><!-- item 12 -->
+              <li class="isotope-item col-sm-4 col-md-4 design"><!-- item 8 -->
                 <div class="item-box">
                   <figure>
                       <span class="overlay"></span>
@@ -502,7 +446,63 @@
                     <img class="img-responsive" src="assets/images/dentist.svg" width="260" height="260" alt="">
                   </figure>
                   <div class="item-box-desc">
-                    <h4><b>Nearest Dentist:</b> {{ trip.dentist }}</h4>
+                    <h4><b>Nearest Dentist:</b> <p>{{ trip.dentist }}</p></h4>
+                  </div>
+                </div>
+              </li>
+
+              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 9 -->
+                <div class="item-box">
+                  <figure>
+                      <span class="overlay"></span>
+                      <span class="inner">
+                      </span>
+                    <img class="img-responsive" src="assets/images/gas-station.svg" width="260" height="260" alt="">
+                  </figure>
+                  <div class="item-box-desc">
+                    <h4><b>Nearest Gas Station:</b><p> {{ trip.gas_station }}</p></h4>
+                  </div>
+                </div>
+              </li>
+
+              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 10 -->
+                <div class="item-box">
+                  <figure>
+                      <span class="overlay"></span>
+                      <span class="inner">
+                      </span>
+                    <img class="img-responsive" src="assets/images/atm.svg" width="260" height="260" alt="">
+                  </figure>
+                  <div class="item-box-desc">
+                    <h4><b>Nearest ATM:</b><p> {{ trip.atm }}</p></h4>
+                  </div>
+                </div>
+              </li>
+
+              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 11 -->
+                <div class="item-box">
+                  <figure>
+                      <span class="overlay"></span>
+                      <span class="inner">
+                      </span>
+                    <img class="img-responsive" src="assets/images/doctor.svg" width="260" height="260" alt="">
+                  </figure>
+                  <div class="item-box-desc">
+                    <h4><b>Nearest Doctor:</b><p> {{ trip.doctor }}</p></h4>
+                  </div>
+                </div>
+              </li>
+
+              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 12 -->
+                <div class="item-box">
+                  <figure>
+                      <span class="overlay"></span>
+                      <span class="inner">
+                      </span>
+                    <img class="img-responsive" src="assets/images/police.svg" width="260" height="260" alt="">
+                  </figure>
+                  <div class="item-box-desc">
+                    <h4><b>Nearest Police Station:</b><p> {{ trip.police }}</p></h4>
                   </div>
                 </div>
               </li>
@@ -511,8 +511,29 @@
           
         </div>    
     </div>
+
+
+    <!-- <div id="myMap"></div> -->
     
-      
   </template>
+	
+	<!-- <script>
+		function initMap() {
+			var options = {
+				zoom: 8,
+				center:{lat:42.3601,lng:-71.0589}
+			}
+		var map = new
+		google.maps.Map(getElementById('map'), options);
+		var marker = new google.maps.Marker({
+			position:{lat:42.4668,lng:-70.9495},
+			map:map, 	
+		});
+		var infoWindow = new google.maps.InfoWindow({
+			content: '<h1>HI</h1>'
+		});
+		addMarker({lat:42.4668,lng:-70.9495});
+	</script>
+ -->
 
 </div>

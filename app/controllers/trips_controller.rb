@@ -28,7 +28,7 @@ class TripsController < ApplicationController
 
      # -------Begin hospital results------
 
-    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=hospital&key=#{ENV['API_KEY']}")
+    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&tkeyword=hospital&key=#{ENV['API_KEY']}")
 
     hospital = response.body
     hospital_data = hospital['results'][0]['name']
@@ -72,13 +72,12 @@ class TripsController < ApplicationController
 
    #  #--------Begin pharmacy data-----------
 
-    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&keyword=pharmacy&key=#{ENV['API_KEY']}")
+    response = Unirest.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{latitude},#{longitude}&rankby=distance&type=car_repair&key=#{ENV['API_KEY']}")
 
     
-    pharmacy = response.body
+    car_repair = response.body
 
-    pharmacy_data = pharmacy['results'][0]['name']
-    pharmacy_address = pharmacy['results'][0]['vicinity']
+    car_repair_data = car_repair['results'][0]['name']
 
    #  # render json: pharmacy.to_json
    
@@ -154,6 +153,8 @@ class TripsController < ApplicationController
 
     forecast2 = response.body
     forecast2_data = forecast2['forecast']['forecastday'][0]['day']['maxtemp_c']
+
+
   
     
    # # #  # -----------------Begin Render-------------------------
@@ -166,8 +167,7 @@ class TripsController < ApplicationController
         embassy: embassy_data,
         bank: bank_data,
         police: police_data,
-        pharmcy: pharmacy_data,
-        pharmacy_address: pharmacy_address,
+        car_repair: car_repair_data,
         hotel: hotel_data,
         atm: atm_data,
         airport: airport_data,
@@ -176,7 +176,8 @@ class TripsController < ApplicationController
         weather: weather_data,
         weather2: weather2_data,
         forecast: forecast_data,
-        forecast2: forecast2_data
+        forecast2: forecast2_data,
+        
         
     }   
   end

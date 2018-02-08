@@ -182,7 +182,7 @@ a, a:hover, a:active,
 	#header .logo { 
 		display:block; 
 		float:left; 
-		height:60px; 
+		height:70px; 
 	}
 	
 	#header p {
@@ -945,7 +945,7 @@ div.e404 {
 	margin:16px 0;
 	width:100%;
 	position:relative;
-
+	align-content: center;
 	-webkit-border-radius:6px;
 	   -moz-border-radius:6px;
 			border-radius:6px;
@@ -955,8 +955,13 @@ div.e404 {
 	}
 
 .item-box figure {
-	width:100%;
-	display:block;
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	overflow: hidden;
 	margin-bottom:0;
 	overflow:hidden;
 	position:relative;
@@ -965,9 +970,10 @@ div.e404 {
 	.item-box.fixed-box figure img {
 		width:100%;
 		height:auto;
+
 	}
 .item-box-desc {
-	padding:10px 20px;
+	padding:10px 10px;
 	overflow:hidden;
 }
 .item-box-desc p {
@@ -1155,7 +1161,7 @@ div.e404 {
 	}
 	#footer ul li.sepy {
 		padding-left:16px;
-		color:#666;
+		color:#e8cc2a;
 		font-size:18px;
 	}
 	#footer ul li a {
