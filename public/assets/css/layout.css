@@ -940,7 +940,7 @@ div.e404 {
 /** Item Box
  **************************************************************** **/
 .item-box {
-	background:#f6f6f6;
+	background:#CC000000;
 	overflow:hidden;
 	margin:16px 0;
 	width:100%;
@@ -975,12 +975,17 @@ div.e404 {
 .item-box-desc {
 	padding:10px 10px;
 	overflow:hidden;
+	background-color: #40404040;
+
+
+	
 }
 .item-box-desc p {
 	margin-top:20px;
 	display:block;
 	overflow:hidden; 
-	text-overflow:ellipsis;
+	text-overflow:ellipsis; 
+	color: #000000;
 	/*white-space: nowrap;*/
 }
 	.item-box.fixed-box .item-box-desc p {
@@ -1134,7 +1139,7 @@ div.e404 {
 **************************************************************** **/
 #footer { 
 	background:#333333;
-	color:#fff;
+	color: #fff;
 	font-size:10px;
 	position:fixed;
 	bottom:0; left:0; right:0; padding:0 20px;
