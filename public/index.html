@@ -2,79 +2,79 @@
 <!--[if IE 8]>      <html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>      <html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <title>Odyssey - Smart Travel</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+<head>
+  <meta charset="utf-8" />
+  <title>Odyssey - Smart Travel</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
 
-    <!-- mobile settings -->
-    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  <!-- mobile settings -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
 
-    <!-- WEB FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
+  <!-- WEB FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
 
-    <!-- CORE CSS -->
-    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+  <!-- CORE CSS -->
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+  <link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
 
-    <!-- THEME CSS -->
-    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" />
+  <!-- THEME CSS -->
+  <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" />
 
-    <!-- Morenizr -->
-    <script type="text/javascript" src="assets/plugins/modernizr.min.js"></script>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.js"></script>
-    <script src="index.js" defer></script>
-    <div>
-    	<style>#map{
-    		height: 400px;
-    		width: 100%;
-    	</style>
-  </head>
-  <body>
-    <div id="vue-app">
+  <!-- Morenizr -->
+  <script type="text/javascript" src="assets/plugins/modernizr.min.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="index.js" defer></script>
 
-    
+    <!-- Google Maps Script -->
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=#{ENV['map_key']}"></script> --> 
+</head>
 
+<!-- BODY -->
+<body>
+  <div id="vue-app">
     <!-- TOP BAR -->
     <div id="topBar">
       <div class="container">
-        <span class="hidden-m">
-
-        <div class="btn-group pull-right">
-          <!-- <button class="dropdown-toggle language"  data-toggle="dropdown">
+        <span class="hidden-m"></span>
+					<div class="btn-group pull-right">
+          	<button class="dropdown-toggle language"  data-toggle="dropdown">
              <span class="caret"></span>
-          </button> -->
+          	</button>
 
-          <ul class="dropdown-menu">
-            <li>
-              <a href="page-login.html"><i class="fa fa-user"></i> Login</a>
-            </li>
-            <li>
-              <a href="page-register.html"><i class="fa fa-key"></i> Register</a>
-            </li>
-            <li class="divider"></li>
-            <li>
-              <a href="page-account-settings.html"><i class="fa fa-cogs"></i> Account Settings</a>
-            </li>
-            <li>
-              <a href="shop-history.html"><i class="fa fa-book"></i> Order History</a>
-            </li>
-            <li>
-              <a href="page-account-logout.html"><i class="fa fa-power-off"></i> Logout</a>
-            </li>
-          </ul>
-        </div>
+	          	<ul class="dropdown-menu">
+	            	<li>
+	              	<a href="page-login.html"><i class="fa fa-user"></i> Login</a>
+	            	</li>
 
+	            	<li>
+	              	<a href="page-register.html"><i class="fa fa-key"></i> Register</a>
+	            	</li>
+	            	<li class="divider"></li>
+
+	            	<li>
+	              	<a href="page-account-settings.html"><i class="fa fa-cogs"></i> Account Settings</a>
+	            	</li>
+
+	            	<li>
+	              	<a href="shop-history.html"><i class="fa fa-book"></i> Order History</a>
+	            	</li>
+
+	            	<li>
+	              	<a href="page-account-logout.html"><i class="fa fa-power-off"></i> Logout</a>
+	            	</li>
+	          	</ul>
+
+        	</div>
       </div>
     </div>
     <!-- /TOP BAR -->
@@ -118,426 +118,309 @@
                   <li><a href="page-register.html">Register</a></li>
                 </ul>
               </li>
-      
               
               <li class="dropdown">
                 <a class="dropdown-toggle" href="#"> <i class=></i></a>
                 <ul class="dropdown-menu pull-right">
-                  <li><a href="contact-1.html">Contact #1</a></li>
-                  
+                  <li><a href="contact-1.html">Contact #1</a></li>  
                 </ul>
               </li>
-
             </ul>
           </nav>
         </div>
-        <!-- /TOP MENU -->
-
       </div>
     </header>
     <!-- /HEADER -->
 
-    <!-- SLIDER -->
-    
-
-    <!-- /SLIDER -->
-
-
-
     <router-view></router-view>
-
-
-
-
-    
 
 
     <!-- FOOTER -->
     <footer id="footer">
       <span id="slideTimer"><!-- fs-slideshow timer line --></span>
-
       <!-- copyright -->
       <span class="hidden-xs">&copy; Jenn Sung</span>
       <!-- /copyright -->
     </footer>
     <!-- /FOOTER -->
-
-
-    <!-- /FOLLOW US -->
-
-
-    <!-- JAVASCRIPT FILES -->
-    <script type="text/javascript" src="assets/plugins/jquery-2.2.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery.appear.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery.isotope.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery.nicescroll.min.js"></script>
-
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/knob/js/jquery.knob.js"></script>
-
-    <!-- MAXIMAGE SLIDER -->
-    <script type="text/javascript" src="assets/plugins/maximage/js/jquery.cycle.all.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/maximage/js/jquery.maximage.min.js"></script>
-
-    <script type="text/javascript" src="assets/js/scripts.js"></script>
-
-    </div>
-  </body>
-</html>
-
-  <template id="home-page">
-    <div class="vue-component">
-      <div v-if="show">
-    <div>
-    <img id="cycle-loader" src="assets/images/spinner.gif" alt="loader" />
-
-    <!-- controlls -->
-    <div class="maximage-controls">
-      <a href="#" id="slider_prev"></a>
-      <a href="#" id="slider_next"></a>
-    </div>
-    <!-- /controlls -->
-
-    <ul id="slider" data-autoslide="true" data-autoslide-delay="4500"><!-- data-autoslide="true" or data-autoslide="false" -->
-      <li>
-        <img src="assets/images/demo/slider/london.jpg" alt="" />
-        <div class="caption">
-
-          <div class="block">
-            <h1>Find the nearest airport while traveling</h1>
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          
-
-        </div>
-      </li>
-      <li>
-        <img src="assets/images/demo/slider/tuscany.jpg" alt="" />
-        <div class="caption">
-
-          <div class="block">
-            <h1>Find the nearest hotel while traveling</h1>
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          
-
-        </div>
-      </li>
-      <li>
-        <img src="assets/images/demo/slider/india.jpg" alt="" />
-        <div class="caption">
-
-          <div class="block">
-            <h1>Find the nearest hospital while traveling</h1>
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          
-
-        </div>
-      </li>
-      <li>
-        <img src="assets/images/demo/slider/kyoto.jpg" alt="" />
-        <div class="caption">
-
-          <div class="block">
-            <h1>Find the nearest bank while traveling</h1>
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          
-
-        </div>
-      </li>
-      <li>
-        <img src="assets/images/demo/slider/louvre.jpg" alt="" />
-        <div class="caption">
-
-          <div class="block">
-            <!-- <h1>Odyssey: an intellectual or spiritual wandering or quest </h1> -->
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          <div class="block"><h1> Find the nearest embassy while traveling</h1>
-            
-          </div>
-
-          
-
-        </div>
-      </li>
-      <li>
-        <img src="assets/images/demo/slider/italy.jpg" alt="" />
-        <div class="caption">
-
-          <div class="block">
-            <h1>Find the nearest ATM while traveling</h1>
-          </div>
-
-          <div class="block">
-            
-          </div>
-
-          <div class="block">
-            >
-          </div>
-
-          
-        </div>
-        </div>
-      </li>
-    </ul>
   </div>
 
-      <div class="search-container" v-if="show">
-        <div class="form-group">
-        <input type="text" class="form-control" autofocus="autofocus" placeholder="Search for a City" v-model="searchTerm">
-        </div>
-        
-        <button class="btn btn-primary align-items-end pull-right" v-on:keyup.enter="submit" v-on:click="submit()">Search</button>
-      
-      </div>
+  <!-- JAVASCRIPT FILES -->
+  <script type="text/javascript" src="assets/plugins/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery.appear.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery.isotope.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery.nicescroll.min.js"></script>
 
-   
-    <div class="container" v-if="isVisible">
-      <div class="row">
-
-            <ul class="sort-destination isotope" data-sort-id="isotope-list">
-
-              <li class="isotope-item col-sm-4 col-md-4 development"><!-- item 1 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                        
-                      </span>
-                    <img class="img-responsive" src="assets/images/hotel.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Hotel:</b><p> {{ trip.hotel}}</p></h4>
-                    <p>{{ trip.hotel_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 2 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    </a>
-                    <img class="img-responsive" src="assets/images/travel.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Airport:</b><p> {{ trip.airport }}</p></h4>
-                    <p>{{ trip.airport_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 design"><!-- item 4 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/train.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Transit Station:</b> <p>{{ trip.transit_station }}</p>
-                    	<p>{{ trip.transit_station_info }}</p>
-                    </h4>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 4 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/bank.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Bank:</b><p> {{ trip.bank }}</p></h4>
-                    <p>{{ trip.bank_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 development"><!-- item 5 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/hospital.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Hospital:</b> <p>{{ trip.hospital }}</p></h4>
-                    <p>{{ trip.hospital_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 development"><!-- item 5 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/car.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Auto Repair:</b> <p>{{ trip.car_repair }}</p></h4>
-                    <p>{{ trip.car_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 design"><!-- item 7 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/embassy.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Embassy:</b> <p>{{ trip.embassy }}</p></h4>
-                    <p>{{ trip.embassy_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 design"><!-- item 8 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/dentist.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Dentist:</b> <p>{{ trip.dentist }}</p></h4>
-                    <p>{{ trip.dentist_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 9 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/gas-station.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Gas Station:</b><p> {{ trip.gas_station }}</p></h4>
-                    <p>{{ trip.gas_station_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 10 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/atm.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest ATM:</b><p> {{ trip.atm }}</p></h4>
-                    <p>{{ trip.atm_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 11 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/doctor.svg" width="245" height="245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Doctor:</b><p> {{ trip.doctor }}</p></h4>
-                    <p>{{ trip.doctor_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 12 -->
-                <div class="item-box">
-                  <figure>
-                      <span class="overlay"></span>
-                      <span class="inner">
-                      </span>
-                    <img class="img-responsive" src="assets/images/police.svg" width="245" height="2245" alt="">
-                  </figure>
-                  <div class="item-box-desc">
-                    <h4><b>Nearest Police Station:</b><p> {{ trip.police }}</p></h4>
-                    <p>{{ trip.police_info }}</p>
-                  </div>
-                </div>
-              </li>
-
-            </ul>
-          
-        </div>    
-    </div>
+  <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/knob/js/jquery.knob.js"></script>
+  <!-- MAXIMAGE SLIDER -->
+  <script type="text/javascript" src="assets/plugins/maximage/js/jquery.cycle.all.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/maximage/js/jquery.maximage.min.js"></script>
+  <script type="text/javascript" src="assets/js/scripts.js"></script>
 
   
-</div>
-    
-  </template>
+</body>
+</html>
 
+<template id="home-page">
+  <div class="vue-component">
+  <div>
+    <div v-if="visible">
+ 			<img id="cycle-loader" src="assets/images/spinner.gif" alt="loader" />
 
+    		<!-- controlls -->
+		    <div class="maximage-controls">
+		      <a href="#" id="slider_prev"></a>
+		      <a href="#" id="slider_next"></a>
+		    </div>
+    		<!-- /controlls -->
 
+	    	<ul id="slider" data-autoslide="true" data-autoslide-delay="4500">
+	    		<!-- data-autoslide="true" or data-autoslide="false" -->
+	      	<li>
+	        	<img src="assets/images/demo/slider/london.jpg" alt="" />
+	        		<div class="caption">
+	          		<div class="block">
+	            		<h1>Find the nearest airport while traveling</h1>
+		          </div>
+		        </div>
+		      </li>
+		      
+		      <li>
+		        <img src="assets/images/demo/slider/tuscany.jpg" alt="" />
+		        <div class="caption">
+		          <div class="block">
+		            <h1>Find the nearest hotel while traveling</h1>
+		          </div>
+		        </div>
+		      </li>
+		      
+		      <li>
+		        <img src="assets/images/demo/slider/india.jpg" alt="" />
+		        <div class="caption">
+		          <div class="block">
+		            <h1>Find the nearest hospital while traveling</h1>
+		          </div>
+		        </div>
+		      </li>
+		     
+		      <li>
+		        <img src="assets/images/demo/slider/kyoto.jpg" alt="" />
+		        <div class="caption">
+		          <div class="block">
+		            <h1>Find the nearest bank while traveling</h1>
+		          </div>
+		        </div>
+		      </li>
+		      
+		      <li>
+		        <img src="assets/images/demo/slider/louvre.jpg" alt="" />
+		        <div class="caption">
+		          <div class="block"><h1> Find the nearest embassy while traveling</h1>       
+		          </div>      
+		        </div>
+		      </li>
+	      
+		      <li>
+		        <img src="assets/images/demo/slider/italy.jpg" alt="" />
+		        <div class="caption">
+		          <div class="block">
+		            <h1>Find the nearest ATM while traveling</h1>
+		          </div>
+		        </div>
+		      </li>
+		    </ul>
+	  </div>
+	</div>
+  <div class="search-container" v-if="visible">
+    <div class="form-group">
+    	<input type="text" class="form-control" autofocus="autofocus" placeholder="Search for a City" v-model="searchTerm">
+    </div>
+      <button class="btn btn-primary align-items-end pull-right" v-on:keyup.enter="submit" v-on:click="submit()">Search</button>
+  </div>
 
-	
+    <div class="container" v-if="isVisible">
+      <div class="row">
+        <ul class="sort-destination isotope" data-sort-id="isotope-list">
+        	<!-- Hotel Item -->
+          <li class="isotope-item col-sm-4 col-md-4 development">
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/hotel.svg" width="245" height="245" alt="">
+              </figure>
+             	<div class="item-box-desc">
+                <h4><b>Nearest Hotel:</b><p> {{ trip.hotel}} </p></h4>
+                    <p>{{ trip.hotel_info }}</p>
+              </div>
+            </div>
+          </li>
+          <!-- Airport Item -->
+        	<li class="isotope-item col-sm-4 col-md-4 photography">
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/travel.svg" width="245" height="245" alt="">
+              </figure>
+              <div class="item-box-desc">
+                <h4><b>Nearest Airport:</b><p> {{ trip.airport }}</p></h4>
+                    <p>{{ trip.airport_info }}</p>
+              </div>
+            </div>
+          </li>
+          <!-- Transit Station Item -->
+          <li class="isotope-item col-sm-4 col-md-4 design">
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/train.svg" width="245" height="245" alt="">
+              </figure>
+              <div class="item-box-desc">
+                <h4><b>Nearest Transit Station:</b> <p>{{ trip.transit_station }}</p>
+                    <p>{{ trip.transit_station_info }}</p>
+                </h4>
+              </div>
+          	</div>
+          </li>
+          		<!-- Bank Item -->
+          <li class="isotope-item col-sm-4 col-md-4 photography">
+            <div class="item-box">
+            	<figure>
+              	<span class="overlay"></span>
+              	<span class="inner"></span>
+                	<img class="img-responsive" src="assets/images/bank.svg" width="245" height="245" alt="">
+            	</figure>
+            	<div class="item-box-desc">
+              <h4><b>Nearest Bank:</b><p> {{ trip.bank }}</p></h4>
+                  <p>{{ trip.bank_info }}</p>
+            	</div>
+           	</div>
+         	</li>
+         	<!-- Hospital Item -->
+          <li class="isotope-item col-sm-4 col-md-4 development">
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/hospital.svg" width="245" height="245" alt="">
+              </figure>
+                <div class="item-box-desc">
+                  <h4><b>Nearest Hospital:</b> <p>{{ trip.hospital }}</p></h4>
+                    	<p>{{ trip.hospital_info }}</p>
+                </div>
+            </div>
+          </li>
+          <!-- Auto Repair Item -->
+          <li class="isotope-item col-sm-4 col-md-4 development">
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/car.svg" width="245" height="245" alt="">
+              </figure>
+              <div class="item-box-desc">
+                <h4><b>Nearest Auto Repair:</b> <p>{{ trip.car_repair }}</p></h4>
+                    <p>{{ trip.car_info }}</p>
+              </div>
+            </div>
+          </li>
+          <!-- Embassy Item -->
+          <li class="isotope-item col-sm-4 col-md-4 design">
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/embassy.svg" width="245" height="245" alt="">
+              </figure>
+                <div class="item-box-desc">
+                  <h4><b>Nearest Embassy:</b> <p>{{ trip.embassy }}</p></h4>
+                    	<p>{{ trip.embassy_info }}</p>
+                </div>
+            </div>
+         	</li>
+         	<!-- Dentist Item -->
+          <li class="isotope-item col-sm-4 col-md-4 design">
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/dentist.svg" width="245" height="245" alt="">
+              </figure>
+              <div class="item-box-desc">
+                  <h4><b>Nearest Dentist:</b> <p>{{ trip.dentist }}</p></h4>
+                    	<p>{{ trip.dentist_info }}</p>
+              </div>
+            </div>
+          </li>
+          <!-- Gas Station Item -->
+          <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 9 -->
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/gas-station.svg" width="245" height="245" alt="">
+              </figure>
+              <div class="item-box-desc">
+                  <h4><b>Nearest Gas Station:</b><p> {{ trip.gas_station }}</p></h4>
+                    	<p>{{ trip.gas_station_info }}</p>
+              </div>
+            </div>
+          </li>
+          <!-- ATM Item -->
+          <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 10 -->
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/atm.svg" width="245" height="245" alt="">
+              </figure>
+              <div class="item-box-desc">
+                <h4><b>Nearest ATM:</b><p> {{ trip.atm }}</p></h4>
+                    <p>{{ trip.atm_info }}</p>
+              </div>
+            </div>
+          </li>
+          <!-- Doctor Item -->
+					<li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 11 -->
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                  <img class="img-responsive" src="assets/images/doctor.svg" width="245" height="245" alt="">
+              </figure>
+              <div class="item-box-desc">
+                <h4><b>Nearest Doctor:</b><p> {{ trip.doctor }}</p></h4>
+                    <p>{{ trip.doctor_info }}</p>
+              </div>
+            </div>
+          </li>
 
+          <li class="isotope-item col-sm-4 col-md-4 photography"><!-- item 12 -->
+            <div class="item-box">
+              <figure>
+                <span class="overlay"></span>
+                <span class="inner"></span>
+                 	<img class="img-responsive" src="assets/images/police.svg" width="245" height="2245" alt="">
+              </figure>
+                <div class="item-box-desc">
+                  <h4><b>Nearest Police Station:</b><p> {{ trip.police }}</p></h4>
+                    	<p>{{ trip.police_info }}</p>
+                </div>
+            </div>
+          </li>
+        </ul> 
+      </div>     
+    </div>
+   </div>  
+</template>
 
-
-</div>
+<!-- <template>
+	<div id="userMap"></div>
+</template>
+ -->
