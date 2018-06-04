@@ -26,7 +26,6 @@ var HomePage = {
         this.trip = response.data;
     }.bind(this));
   },
-  computed: {},
     
 // Map-------------------
 
